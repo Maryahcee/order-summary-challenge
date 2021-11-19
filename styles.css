@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap');
+:root{
+   --pale-blue: hsl(225, 100%, 94%);
+   --Bright-blue: hsl(245, 75%, 52%);
+   --Very-pale-blue: hsl(225, 100%, 98%);
+   --Desaturated-blue: hsl(224, 23%, 55%);
+   --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    margin: 10px 0;
+    color: var(--Dark-blue);
+    font-weight: bolder;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--Desaturated-blue);
+}
+
+button{
+    font-family: inherit;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+    background-color:var(--pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.dance-image{
+    background: url('./images/pattern-background-desktop.svg') no-repeat center/cover;
+    height: 20em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.container{
+    margin: 1.5rem;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px hsl(228, 45%, 44% 0.14);
+}
+
+.container img.hero{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-change{
+    color: var(--Bright-blue);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.btn-process{
+    padding: 13px;
+    background-color: var(--Bright-blue);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-process:hover, .btn-change:hover{
+    opacity: 0.9;
+}
+
+.btn-cancel{
+    padding: 13px;
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+
+.btn-cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.container .prices{
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--Very-pale-blue);
+    width: 90%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .prices article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .prices  article img{
+    margin-right: 10px;
+}
+
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p.text{
+    padding: 0 20px;
+}
+/* Attribution */
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    @media (min-width: 768px) {
+        .dance-image {
+            background:url('./images/pattern-background-desktop.svg') no repeat center/cover;
+            height: 50vh;
+         }
+         .container {
+             width: 500px;
+         }
+    }
