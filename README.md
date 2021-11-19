@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution](https://github.com/Maryahcee/order-summary-challenge)
+- Solution URL: [Add solution](https://awesome-poincare-07800c.netlify.app/)
 
 ## My process
 
